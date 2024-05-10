@@ -24,8 +24,9 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 androidx-camera2 = { group = "androidx.camera", name = "camera-camera2", version.ref = "camerax" }
 androidx-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "camerax" }
 androidx-view = { group = "androidx.camera", name = "camera-view", version.ref = "camerax" }
-tensor-support= { group = "org.tensorflow", name = "tensorflow-lite-support", version.ref = "tflite"}
-tensor-metadata= { group = "org.tensorflow", name = "tensorflow-lite-metadata", version.ref = "tflite"}
+tensor-support = { group = "org.tensorflow", name = "tensorflow-lite-support", version.ref = "tflite"}
+tensor-metadata = { group = "org.tensorflow", name = "tensorflow-lite-metadata", version.ref = "tflite"}
+tensor-task-vision = { group = "org.tensorflow", name = "tensorflow-lite-task-vision", version.ref = "tflite" }
 
 [bundles]
 camerax = [
@@ -36,6 +37,7 @@ camerax = [
 tflite = [
     "tensor-metadata",
     "tensor-support",
+    "tensor-task-vision"
 ]
 
 [plugins]
